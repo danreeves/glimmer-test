@@ -7,8 +7,9 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "ember build",
-    "start": "ember server",
+    "dev": "ember serve",
+    "build": "ember build --environment=production",
+    "start": "serve dist",
     "test": "ember test"
   },
   "devDependencies": {
@@ -20,8 +21,8 @@
     "ember-cli-inject-live-reload": "^1.6.1",
     "typescript": "^2.2.2"
   },
-  "engines": {
-    "node": ">= 4.0"
-  },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "serve": "^5.1.1"
+  }
 }

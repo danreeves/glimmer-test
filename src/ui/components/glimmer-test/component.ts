@@ -1,5 +1,5 @@
-import Component from "@glimmer/component";
+import Component, { tracked } from "@glimmer/component";
 
 export default class GlimmerTest extends Component {
-
+    randos = Array.from({ length: 100 });
 }
